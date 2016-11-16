@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD116861DD0487C0067F667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD116851DD0487C0067F667 /* AppDelegate.swift */; };
+		2CD116881DD0487C0067F667 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD116871DD0487C0067F667 /* FirstViewController.swift */; };
+		2CD1168A1DD0487C0067F667 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD116891DD0487C0067F667 /* SecondViewController.swift */; };
+		2CD1168D1DD0487C0067F667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1168B1DD0487C0067F667 /* Main.storyboard */; };
+		2CD1168F1DD0487C0067F667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1168E1DD0487C0067F667 /* Assets.xcassets */; };
+		2CD116921DD0487C0067F667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116901DD0487C0067F667 /* LaunchScreen.storyboard */; };
+		2CD1170A1DDC1DE40067F667 /* activity_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FA1DDC1DE40067F667 /* activity_button.png */; };
+		2CD1170B1DDC1DE40067F667 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FB1DDC1DE40067F667 /* ic_launcher.png */; };
+		2CD1170C1DDC1DE40067F667 /* ic_launcher2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FC1DDC1DE40067F667 /* ic_launcher2.png */; };
+		2CD1170D1DDC1DE40067F667 /* ic_menu_moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FD1DDC1DE40067F667 /* ic_menu_moon.png */; };
+		2CD1170E1DDC1DE40067F667 /* ic_menu_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FE1DDC1DE40067F667 /* ic_menu_refresh.png */; };
+		2CD1170F1DDC1DE40067F667 /* ic_menu_sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD116FF1DDC1DE40067F667 /* ic_menu_sun.png */; };
+		2CD117101DDC1DE40067F667 /* ic_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117001DDC1DE40067F667 /* ic_refresh.png */; };
+		2CD117111DDC1DE40067F667 /* ic_tab_conditions_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117011DDC1DE40067F667 /* ic_tab_conditions_grey.png */; };
+		2CD117121DDC1DE40067F667 /* ic_tab_conditions_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117021DDC1DE40067F667 /* ic_tab_conditions_white.png */; };
+		2CD117131DDC1DE40067F667 /* ic_tab_forecast_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117031DDC1DE40067F667 /* ic_tab_forecast_grey.png */; };
+		2CD117141DDC1DE40067F667 /* ic_tab_forecast_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117041DDC1DE40067F667 /* ic_tab_forecast_white.png */; };
+		2CD117151DDC1DE40067F667 /* ic_tab_info_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117051DDC1DE40067F667 /* ic_tab_info_grey.png */; };
+		2CD117161DDC1DE40067F667 /* ic_tab_info_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117061DDC1DE40067F667 /* ic_tab_info_white.png */; };
+		2CD117171DDC1DE40067F667 /* ic_tab_settings_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117071DDC1DE40067F667 /* ic_tab_settings_grey.png */; };
+		2CD117181DDC1DE40067F667 /* ic_tab_settings_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117081DDC1DE40067F667 /* ic_tab_settings_white.png */; };
+		2CD117191DDC1DE40067F667 /* ic_volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD117091DDC1DE40067F667 /* ic_volume.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CD116821DD0487C0067F667 /* auroralert2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = auroralert2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD116851DD0487C0067F667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CD116871DD0487C0067F667 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2CD116891DD0487C0067F667 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2CD1168C1DD0487C0067F667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CD1168E1DD0487C0067F667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CD116911DD0487C0067F667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CD116931DD0487C0067F667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD116FA1DDC1DE40067F667 /* activity_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = activity_button.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/activity_button.png"; sourceTree = "<group>"; };
+		2CD116FB1DDC1DE40067F667 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_launcher.png"; sourceTree = "<group>"; };
+		2CD116FC1DDC1DE40067F667 /* ic_launcher2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_launcher2.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_launcher2.png"; sourceTree = "<group>"; };
+		2CD116FD1DDC1DE40067F667 /* ic_menu_moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_menu_moon.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_menu_moon.png"; sourceTree = "<group>"; };
+		2CD116FE1DDC1DE40067F667 /* ic_menu_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_menu_refresh.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_menu_refresh.png"; sourceTree = "<group>"; };
+		2CD116FF1DDC1DE40067F667 /* ic_menu_sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_menu_sun.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_menu_sun.png"; sourceTree = "<group>"; };
+		2CD117001DDC1DE40067F667 /* ic_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_refresh.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_refresh.png"; sourceTree = "<group>"; };
+		2CD117011DDC1DE40067F667 /* ic_tab_conditions_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_conditions_grey.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_conditions_grey.png"; sourceTree = "<group>"; };
+		2CD117021DDC1DE40067F667 /* ic_tab_conditions_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_conditions_white.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_conditions_white.png"; sourceTree = "<group>"; };
+		2CD117031DDC1DE40067F667 /* ic_tab_forecast_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_forecast_grey.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_forecast_grey.png"; sourceTree = "<group>"; };
+		2CD117041DDC1DE40067F667 /* ic_tab_forecast_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_forecast_white.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_forecast_white.png"; sourceTree = "<group>"; };
+		2CD117051DDC1DE40067F667 /* ic_tab_info_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_info_grey.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_info_grey.png"; sourceTree = "<group>"; };
+		2CD117061DDC1DE40067F667 /* ic_tab_info_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_info_white.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_info_white.png"; sourceTree = "<group>"; };
+		2CD117071DDC1DE40067F667 /* ic_tab_settings_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_settings_grey.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_settings_grey.png"; sourceTree = "<group>"; };
+		2CD117081DDC1DE40067F667 /* ic_tab_settings_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_tab_settings_white.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_tab_settings_white.png"; sourceTree = "<group>"; };
+		2CD117091DDC1DE40067F667 /* ic_volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_volume.png; path = "../Desktop/Aurora Alert screenshots/auroraalert-1/res/drawable-mdpi-v5/ic_volume.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CD1167F1DD0487C0067F667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD116791DD0487C0067F667 = {
+			isa = PBXGroup;
+			children = (
+				2CD116B91DDC1D350067F667 /* assets */,
+				2CD116841DD0487C0067F667 /* auroralert2 */,
+				2CD116831DD0487C0067F667 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CD116831DD0487C0067F667 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD116821DD0487C0067F667 /* auroralert2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD116841DD0487C0067F667 /* auroralert2 */ = {
+			isa = PBXGroup;
+			children = (
+				2CD116851DD0487C0067F667 /* AppDelegate.swift */,
+				2CD116871DD0487C0067F667 /* FirstViewController.swift */,
+				2CD116891DD0487C0067F667 /* SecondViewController.swift */,
+				2CD1168B1DD0487C0067F667 /* Main.storyboard */,
+				2CD1168E1DD0487C0067F667 /* Assets.xcassets */,
+				2CD116901DD0487C0067F667 /* LaunchScreen.storyboard */,
+				2CD116931DD0487C0067F667 /* Info.plist */,
+			);
+			path = auroralert2;
+			sourceTree = "<group>";
+		};
+		2CD116B91DDC1D350067F667 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				2CD116FA1DDC1DE40067F667 /* activity_button.png */,
+				2CD116FB1DDC1DE40067F667 /* ic_launcher.png */,
+				2CD116FC1DDC1DE40067F667 /* ic_launcher2.png */,
+				2CD116FD1DDC1DE40067F667 /* ic_menu_moon.png */,
+				2CD116FE1DDC1DE40067F667 /* ic_menu_refresh.png */,
+				2CD116FF1DDC1DE40067F667 /* ic_menu_sun.png */,
+				2CD117001DDC1DE40067F667 /* ic_refresh.png */,
+				2CD117011DDC1DE40067F667 /* ic_tab_conditions_grey.png */,
+				2CD117021DDC1DE40067F667 /* ic_tab_conditions_white.png */,
+				2CD117031DDC1DE40067F667 /* ic_tab_forecast_grey.png */,
+				2CD117041DDC1DE40067F667 /* ic_tab_forecast_white.png */,
+				2CD117051DDC1DE40067F667 /* ic_tab_info_grey.png */,
+				2CD117061DDC1DE40067F667 /* ic_tab_info_white.png */,
+				2CD117071DDC1DE40067F667 /* ic_tab_settings_grey.png */,
+				2CD117081DDC1DE40067F667 /* ic_tab_settings_white.png */,
+				2CD117091DDC1DE40067F667 /* ic_volume.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CD116811DD0487C0067F667 /* auroralert2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD116961DD0487C0067F667 /* Build configuration list for PBXNativeTarget "auroralert2" */;
+			buildPhases = (
+				2CD1167E1DD0487C0067F667 /* Sources */,
+				2CD1167F1DD0487C0067F667 /* Frameworks */,
+				2CD116801DD0487C0067F667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = auroralert2;
+			productName = auroralert2;
+			productReference = 2CD116821DD0487C0067F667 /* auroralert2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CD1167A1DD0487C0067F667 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jessica Kasson";
+				TargetAttributes = {
+					2CD116811DD0487C0067F667 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q7BXP362T8;
+					};
+				};
+			};
+			buildConfigurationList = 2CD1167D1DD0487C0067F667 /* Build configuration list for PBXProject "auroralert2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CD116791DD0487C0067F667;
+			productRefGroup = 2CD116831DD0487C0067F667 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CD116811DD0487C0067F667 /* auroralert2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CD116801DD0487C0067F667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD117191DDC1DE40067F667 /* ic_volume.png in Resources */,
+				2CD116921DD0487C0067F667 /* LaunchScreen.storyboard in Resources */,
+				2CD1170F1DDC1DE40067F667 /* ic_menu_sun.png in Resources */,
+				2CD1168F1DD0487C0067F667 /* Assets.xcassets in Resources */,
+				2CD1170A1DDC1DE40067F667 /* activity_button.png in Resources */,
+				2CD117111DDC1DE40067F667 /* ic_tab_conditions_grey.png in Resources */,
+				2CD117161DDC1DE40067F667 /* ic_tab_info_white.png in Resources */,
+				2CD117181DDC1DE40067F667 /* ic_tab_settings_white.png in Resources */,
+				2CD117151DDC1DE40067F667 /* ic_tab_info_grey.png in Resources */,
+				2CD1170D1DDC1DE40067F667 /* ic_menu_moon.png in Resources */,
+				2CD1170E1DDC1DE40067F667 /* ic_menu_refresh.png in Resources */,
+				2CD1168D1DD0487C0067F667 /* Main.storyboard in Resources */,
+				2CD117101DDC1DE40067F667 /* ic_refresh.png in Resources */,
+				2CD117121DDC1DE40067F667 /* ic_tab_conditions_white.png in Resources */,
+				2CD1170C1DDC1DE40067F667 /* ic_launcher2.png in Resources */,
+				2CD1170B1DDC1DE40067F667 /* ic_launcher.png in Resources */,
+				2CD117141DDC1DE40067F667 /* ic_tab_forecast_white.png in Resources */,
+				2CD117171DDC1DE40067F667 /* ic_tab_settings_grey.png in Resources */,
+				2CD117131DDC1DE40067F667 /* ic_tab_forecast_grey.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD1167E1DD0487C0067F667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD1168A1DD0487C0067F667 /* SecondViewController.swift in Sources */,
+				2CD116861DD0487C0067F667 /* AppDelegate.swift in Sources */,
+				2CD116881DD0487C0067F667 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CD1168B1DD0487C0067F667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD1168C1DD0487C0067F667 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CD116901DD0487C0067F667 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD116911DD0487C0067F667 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CD116941DD0487C0067F667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CD116951DD0487C0067F667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CD116971DD0487C0067F667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = auroralert2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.auroralert2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CD116981DD0487C0067F667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = auroralert2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.auroralert2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD1167D1DD0487C0067F667 /* Build configuration list for PBXProject "auroralert2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD116941DD0487C0067F667 /* Debug */,
+				2CD116951DD0487C0067F667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CD116961DD0487C0067F667 /* Build configuration list for PBXNativeTarget "auroralert2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD116971DD0487C0067F667 /* Debug */,
+				2CD116981DD0487C0067F667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CD1167A1DD0487C0067F667 /* Project object */;
+}
