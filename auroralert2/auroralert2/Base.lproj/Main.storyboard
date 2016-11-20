@@ -8,7 +8,7 @@
         <!--Conditions-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="ConditionsViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,41 +17,171 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rK4-8a-Abl">
+                                <rect key="frame" x="0.0" y="20" width="600" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-ut-0bA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Kp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-Lu-NR8" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="17" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcs-ZB-S4N" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="40" bottom="8" right="40"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwA-tA-0R8" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-ZK-739">
+                                        <rect key="frame" x="0.0" y="17" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 1 hour:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-Lk-CRd" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-gb-krR" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb0-V8-EUU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHV-of-Wda">
+                                        <rect key="frame" x="0.0" y="34" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 4 hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me8-V6-44e" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFT-MH-q9s" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-bJ-9iT" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-yE-qfC">
+                                        <rect key="frame" x="0.0" y="51" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brandon, MB K-Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-oS-NyK" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfC-33-kKl" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-VX-gH4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akP-Km-Mbg">
+                                        <rect key="frame" x="0.0" y="68" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kp needed for aurora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-T6-gC4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="580" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0T-KK-cdU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="580" y="0.0" width="20" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="VFT-MH-q9s" secondAttribute="width" id="EJN-Dl-gM4"/>
+                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="mfC-33-kKl" secondAttribute="width" id="MHR-ZT-aJr"/>
+                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="9eM-gb-krR" secondAttribute="width" id="RWC-ZH-c4u"/>
+                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="Ag0-VX-gH4" secondAttribute="width" id="YIV-1E-qk9"/>
+                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="Bb0-V8-EUU" secondAttribute="width" id="jGb-xg-Jf2"/>
+                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="EDc-bJ-9iT" secondAttribute="width" id="qcf-CG-yf2"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last updated: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-OS-pv4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="530" width="600" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="VEy-OS-pv4" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Csa-8d-ZLJ"/>
+                            <constraint firstItem="rK4-8a-Abl" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="D0r-yX-ryO"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="VEy-OS-pv4" secondAttribute="bottom" id="RIR-2M-Qup"/>
+                            <constraint firstItem="VEy-OS-pv4" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="hS3-xu-tqg"/>
+                            <constraint firstItem="rK4-8a-Abl" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="tuk-fu-g34"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GCa-na-WlD" appends="YES" id="h1K-gB-wyR"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Conditions" image="ic_tab_conditions_grey.png" id="acW-dT-cKf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GCa-na-WlD"/>
             </objects>
             <point key="canvasLocation" x="750" y="-1056"/>
         </scene>
         <!--Forecast-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ForecastViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -60,26 +190,202 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6lD-3N-fjo">
+                                <rect key="frame" x="0.0" y="20" width="600" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sya-IB-ne7">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Storm Probability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmr-4c-nRQ" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-Ek-G8S" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-25-S1w" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-px-gmk" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="gEg-px-gmk" secondAttribute="width" id="S35-6i-gvo"/>
+                                            <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="AAI-25-S1w" secondAttribute="width" id="cbg-gd-RHU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-A1-HUG">
+                                        <rect key="frame" x="0.0" y="17" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T76-c2-vEC" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVe-Bn-i9L" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPi-zV-KSX" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3S-db-7EU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XVe-Bn-i9L" firstAttribute="width" secondItem="q3S-db-7EU" secondAttribute="width" id="BUv-00-Ry6"/>
+                                            <constraint firstItem="XVe-Bn-i9L" firstAttribute="width" secondItem="SPi-zV-KSX" secondAttribute="width" id="t8H-qr-elc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-6l-u9y">
+                                        <rect key="frame" x="0.0" y="34" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Minor Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-5A-AJ9" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39y-HS-qNK" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-jI-XPh" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-9o-90P" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="39y-HS-qNK" firstAttribute="width" secondItem="9c2-jI-XPh" secondAttribute="width" id="TGa-BN-QFn"/>
+                                            <constraint firstItem="39y-HS-qNK" firstAttribute="width" secondItem="iPl-9o-90P" secondAttribute="width" id="W7L-wH-eVb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-BW-teY">
+                                        <rect key="frame" x="0.0" y="51" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Moderate Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-sm-Go5" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ae-U2-VeP" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-na-Vgy" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAd-ne-ISc" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4Ae-U2-VeP" firstAttribute="width" secondItem="bJU-na-Vgy" secondAttribute="width" id="nbN-fk-UTH"/>
+                                            <constraint firstItem="4Ae-U2-VeP" firstAttribute="width" secondItem="NAd-ne-ISc" secondAttribute="width" id="xXx-9i-Yrb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-oc-UAL">
+                                        <rect key="frame" x="0.0" y="68" width="600" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Strong-Extreme Storm            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-r0-TyM" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48C-lX-fJR" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06z-sx-tWT" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ee-bK-at3" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="48C-lX-fJR" firstAttribute="width" secondItem="06z-sx-tWT" secondAttribute="width" id="r4a-hv-hce"/>
+                                            <constraint firstItem="48C-lX-fJR" firstAttribute="width" secondItem="2Ee-bK-at3" secondAttribute="width" id="txS-51-bE8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="oWT-5A-AJ9" secondAttribute="width" id="0FO-zg-LwM"/>
+                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="T76-c2-vEC" secondAttribute="width" id="1XW-iz-LSI"/>
+                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="rDZ-sm-Go5" secondAttribute="width" id="bJE-LV-8Ea"/>
+                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="Ioi-r0-TyM" secondAttribute="width" id="d7c-sZ-nMS"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="6lD-3N-fjo" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="DoA-4y-RY1"/>
+                            <constraint firstItem="6lD-3N-fjo" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="lre-kE-sqf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Forecast" image="ic_tab_forecast_grey.png" id="cPa-gy-q4n"/>
@@ -116,7 +422,7 @@
         <!--Settings-->
         <scene sceneID="Y3q-j5-RPr">
             <objects>
-                <viewController id="0QC-dC-GLO" sceneMemberID="viewController">
+                <viewController id="0QC-dC-GLO" customClass="SettingsViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJc-kc-FsY"/>
                         <viewControllerLayoutGuide type="bottom" id="nD9-GS-acU"/>
@@ -125,17 +431,256 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Settings!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey1-bY-sPk">
-                                <rect key="frame" x="263" y="289" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Nv-xq-lZT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="415"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rvd-zp-Ykg" userLabel="RefreshLoc">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Refresh Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-Ky-cbb">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPM-Xk-YZs">
+                                                <rect key="frame" x="0.0" y="24" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Magnetic Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRg-aW-Luj" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="43" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ic_refresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="5fr-a6-t3Y">
+                                                <rect key="frame" x="552" y="8" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="9Nr-Ky-cbb" firstAttribute="width" secondItem="Rvd-zp-Ykg" secondAttribute="width" id="S6J-1l-d0d"/>
+                                            <constraint firstAttribute="trailing" secondItem="5fr-a6-t3Y" secondAttribute="trailing" id="XGF-2R-UZ8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZ5-d6-Ll7" userLabel="RefreshRate">
+                                        <rect key="frame" x="0.0" y="65" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refresh Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m0-tV-ZjH">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often the data updates." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNV-cA-D2A" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="TVJ-RZ-A3H">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TVJ-RZ-A3H" secondAttribute="trailing" id="j1x-iR-ntV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-8Z-JLX" userLabel="AlertTimes">
+                                        <rect key="frame" x="0.0" y="115" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alert Times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyJ-LO-FWK">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When it's okay for Aurora Alert to alert you." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSu-8f-Vdk" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="kvU-ue-HI4">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kvU-ue-HI4" secondAttribute="trailing" id="yhe-xg-eSi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-RM-Eye" userLabel="AlertThreshold">
+                                        <rect key="frame" x="0.0" y="165" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alert Threshold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20w-lc-gBl">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When you can be alerted." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-UG-yAr" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Yt-od-U6k">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9Yt-od-U6k" secondAttribute="trailing" id="HYD-p7-4OZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oI-bD-yTX" userLabel="AlertSounds">
+                                        <rect key="frame" x="0.0" y="215" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alert Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZa-DD-Jet">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume and sound settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-EQ-xcq" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="rhn-qp-hyM">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="rhn-qp-hyM" secondAttribute="trailing" id="9Ek-2H-cs6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sg-pp-MXc" userLabel="Weather">
+                                        <rect key="frame" x="0.0" y="265" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXR-fT-hYn">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose acceptable cloud conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dme-1n-qL8" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="3a9-Zo-QDj">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3a9-Zo-QDj" secondAttribute="trailing" id="KPj-Nu-QdW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZp-e0-I5x" userLabel="Display">
+                                        <rect key="frame" x="0.0" y="315" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OD-PF-171">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customize the display of some features." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPO-Ym-JYc" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="LBA-ZA-d12">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LBA-ZA-d12" secondAttribute="trailing" id="uSk-0o-pNn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF9-hb-bTJ" userLabel="OtherSettings">
+                                        <rect key="frame" x="0.0" y="365" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJY-kp-ddW">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset to default and other options." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-Ge-Ho2" customClass="UlineBorderLabel" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="23" width="600" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ulineColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="activity_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="bnh-98-J5n">
+                                                <rect key="frame" x="560" y="8" width="32" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bnh-98-J5n" secondAttribute="trailing" id="lNR-iX-4eZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ey1-bY-sPk" firstAttribute="centerY" secondItem="B4b-cS-IZ6" secondAttribute="centerY" id="3G0-PC-gIf"/>
-                            <constraint firstItem="Ey1-bY-sPk" firstAttribute="centerX" secondItem="B4b-cS-IZ6" secondAttribute="centerX" id="fSb-rE-5lk"/>
+                            <constraint firstItem="3Nv-xq-lZT" firstAttribute="centerY" secondItem="B4b-cS-IZ6" secondAttribute="centerY" id="f2P-zL-550"/>
+                            <constraint firstItem="3Nv-xq-lZT" firstAttribute="width" secondItem="B4b-cS-IZ6" secondAttribute="width" id="hpl-qD-oAA"/>
+                            <constraint firstItem="3Nv-xq-lZT" firstAttribute="centerX" secondItem="B4b-cS-IZ6" secondAttribute="centerX" id="wJz-An-MXv"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="ic_tab_settings_grey.png" id="lgQ-RC-dza"/>
@@ -143,95 +688,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH6-lW-auJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="230"/>
+            <point key="canvasLocation" x="750" y="236"/>
         </scene>
         <!--Info-->
         <scene sceneID="iXM-fv-yV0">
             <objects>
-                <viewController id="umQ-S1-J4n" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="umQ-S1-J4n" customClass="InfoViewController" customModule="auroralert2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gAs-vv-2R1"/>
                         <viewControllerLayoutGuide type="bottom" id="Qhq-4s-91Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0V2-bc-sDC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-Tb-nWL">
-                                <rect key="frame" x="0.0" y="28" width="600" height="523"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-NJ-1KQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What does it all mean?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pes-EQ-cmK">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFO-Tg-0ol">
-                                        <rect key="frame" x="8" y="29" width="584" height="21"/>
-                                        <string key="text">Aurora Alert is designed to work “right out of the box”, without any configuration necessary. When it’s first launched, it will find your location if it can, and configure the alert settings based on that. If you wish, you can change any settings to fit your needs, just be aware of what they may do.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwf-kq-Ets">
-                                        <rect key="frame" x="279" y="58" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What’s new?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBW-VS-Xlh">
-                                        <rect key="frame" x="232" y="87" width="136" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuC-uM-xQy">
-                                        <rect key="frame" x="8" y="116" width="584" height="23"/>
-                                        <string key="text">Version 1.03 of Aurora Alert features a more advanced, high resolution map. There is now a zoomed-in and zoomed-out version of the map. To switch between the two, you press and hold the map on the screen.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.6245991587638855" green="0.96643930673599243" blue="0.70141667127609253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view tag="1001" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="600" translatesAutoresizingMaskIntoConstraints="NO" id="PK3-sc-DTx" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="uuC-uM-xQy" firstAttribute="width" secondItem="wTd-Tb-nWL" secondAttribute="width" id="56x-1S-CZJ"/>
-                                    <constraint firstItem="uuC-uM-xQy" firstAttribute="trailing" secondItem="pBW-VS-Xlh" secondAttribute="trailing" id="6gU-e2-AAZ"/>
-                                    <constraint firstItem="Rwf-kq-Ets" firstAttribute="trailing" secondItem="zFO-Tg-0ol" secondAttribute="trailing" id="DLX-nu-wWI"/>
-                                    <constraint firstItem="Rwf-kq-Ets" firstAttribute="width" secondItem="wTd-Tb-nWL" secondAttribute="width" id="EVt-SH-z3e"/>
-                                    <constraint firstItem="zFO-Tg-0ol" firstAttribute="width" secondItem="wTd-Tb-nWL" secondAttribute="width" id="FnJ-4L-H0I"/>
-                                    <constraint firstItem="pes-EQ-cmK" firstAttribute="width" secondItem="wTd-Tb-nWL" secondAttribute="width" id="Hcf-o2-61y"/>
-                                    <constraint firstItem="zFO-Tg-0ol" firstAttribute="centerX" secondItem="wTd-Tb-nWL" secondAttribute="centerX" id="Qpu-Oc-cHf"/>
-                                    <constraint firstItem="pes-EQ-cmK" firstAttribute="centerX" secondItem="wTd-Tb-nWL" secondAttribute="centerX" id="SyG-IQ-RHf"/>
-                                    <constraint firstItem="uuC-uM-xQy" firstAttribute="centerX" secondItem="wTd-Tb-nWL" secondAttribute="centerX" id="atL-cS-ITO"/>
-                                    <constraint firstAttribute="width" constant="600" id="cCI-pF-mc7"/>
-                                    <constraint firstItem="Rwf-kq-Ets" firstAttribute="centerX" secondItem="wTd-Tb-nWL" secondAttribute="centerX" id="jQV-iT-CCj"/>
-                                    <constraint firstItem="zFO-Tg-0ol" firstAttribute="trailing" secondItem="pes-EQ-cmK" secondAttribute="trailing" id="k12-Nr-W8D"/>
+                                    <constraint firstAttribute="trailing" secondItem="PK3-sc-DTx" secondAttribute="trailing" id="BjH-1O-7Sb"/>
+                                    <constraint firstAttribute="bottom" secondItem="PK3-sc-DTx" secondAttribute="bottom" id="LpB-cD-Cjn"/>
+                                    <constraint firstItem="PK3-sc-DTx" firstAttribute="top" secondItem="IuF-NJ-1KQ" secondAttribute="top" id="SZa-PJ-8rO"/>
+                                    <constraint firstItem="PK3-sc-DTx" firstAttribute="leading" secondItem="IuF-NJ-1KQ" secondAttribute="leading" id="c4p-OI-b2d"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="cCI-pF-mc7"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wTd-Tb-nWL" firstAttribute="top" secondItem="gAs-vv-2R1" secondAttribute="bottom" constant="216" id="DdC-FA-wOk"/>
-                            <constraint firstItem="wTd-Tb-nWL" firstAttribute="centerX" secondItem="0V2-bc-sDC" secondAttribute="centerX" id="Hz5-io-VYG"/>
-                            <constraint firstItem="wTd-Tb-nWL" firstAttribute="height" secondItem="0V2-bc-sDC" secondAttribute="height" id="qy1-2w-XcR"/>
-                            <constraint firstItem="wTd-Tb-nWL" firstAttribute="width" secondItem="0V2-bc-sDC" secondAttribute="width" id="v5Z-yg-6oO"/>
+                            <constraint firstItem="IuF-NJ-1KQ" firstAttribute="top" secondItem="gAs-vv-2R1" secondAttribute="bottom" constant="8" symbolic="YES" id="aKy-fj-XWq"/>
+                            <constraint firstItem="PK3-sc-DTx" firstAttribute="width" secondItem="0V2-bc-sDC" secondAttribute="width" id="br1-QB-odN"/>
+                            <constraint firstItem="Qhq-4s-91Q" firstAttribute="top" secondItem="IuF-NJ-1KQ" secondAttribute="bottom" constant="8" symbolic="YES" id="gcC-Pk-1Qu"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="ic_tab_info_grey.png" id="J3u-XD-UYF"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1300"/>
+                    <connections>
+                        <outlet property="contentView" destination="PK3-sc-DTx" id="H69-or-hHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLc-qQ-5jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1086"/>
+            <point key="canvasLocation" x="750" y="1249"/>
         </scene>
     </scenes>
     <resources>
+        <image name="activity_button.png" width="33" height="37"/>
+        <image name="ic_refresh.png" width="48" height="48"/>
         <image name="ic_tab_conditions_grey.png" width="32" height="32"/>
         <image name="ic_tab_forecast_grey.png" width="32" height="32"/>
         <image name="ic_tab_info_grey.png" width="32" height="32"/>
