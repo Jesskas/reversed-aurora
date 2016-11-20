@@ -12,13 +12,37 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var currentStartupDateTime: String?
+    var oneDayFromToday: String?
+    var twoDaysFromToday: String?
+    var threeDaysFromToday: String?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         // Added to keep the white status bar given the black background.
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent;
-
+        
+        // Save local date time and next three days for later
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "M/d/yyyy K:mm a"
+        currentStartupDateTime = formatter.stringFromDate(NSDate())
+        
+        let calendar = NSCalendar.currentCalendar()
+        let dayComponent = NSDateComponents()
+        formatter.dateFormat = "MMM d"
+        
+        dayComponent.day = 1
+        let add1day: NSDate = calendar.dateByAddingComponents(dayComponent, toDate: NSDate(), options: NSCalendarOptions())!
+        oneDayFromToday = formatter.stringFromDate(add1day)
+        
+        dayComponent.day = 2
+        let add2day: NSDate = calendar.dateByAddingComponents(dayComponent, toDate: NSDate(), options: NSCalendarOptions())!
+        twoDaysFromToday = formatter.stringFromDate(add2day)
+        
+        dayComponent.day = 3
+        let add3day: NSDate = calendar.dateByAddingComponents(dayComponent, toDate: NSDate(), options: NSCalendarOptions())!
+        threeDaysFromToday = formatter.stringFromDate(add3day)
+        
         // Override point for customization after application launch.
         return true
     }
@@ -45,6 +69,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    func getLastUpdated() -> String {
+        return currentStartupDateTime!
+    }
+    
+    func get1dayFromToday() -> String {
+        return oneDayFromToday!
+    }
+    
+    func get2daysFromToday() -> String {
+        return twoDaysFromToday!
+    }
+    
+    func get3daysFromToday() -> String {
+        return threeDaysFromToday!
+    }
 
 }
 

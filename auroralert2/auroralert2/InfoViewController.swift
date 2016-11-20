@@ -43,7 +43,7 @@ class InfoViewController : UIViewController {
         "Credits",
         "Kp predictions and data are provided by NOAA. Some K-Index data is calculated from magnetic data provided by USGS. Weather data is provided by OpenWeatherMap.org. Copyright belongs to the original devs!"
     ]
-    var stringSizes = [20, 65, 20, 50, 20, 145, 20, 90,
+    var stringSizes = [20, 65, 20, 50, 20, 135, 20, 90,
                        20, 40, 20, 70, 20, 60, 20, 60,
                        20, 140, 20, 60, 20, 90, 20, 20,
                        20, 90]

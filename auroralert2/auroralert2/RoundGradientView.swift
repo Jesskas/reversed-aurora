@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class RoundGradientLabel : UILabel {
+class RoundGradientView : UIView {
     
-    var lightGray: UIColor = UIColor(red: 0x3F/0xFF, green: 0x3F/0xFF, blue: 0x3F/0xFF, alpha: 1.0)
+    var lightGray: UIColor = UIColor(red: 0x2F/0xFF, green: 0x2F/0xFF, blue: 0x2F/0xFF, alpha: 1.0)
     var darkrGray: UIColor = UIColor(red: 0x1F/0xFF, green: 0x1F/0xFF, blue: 0x1F/0xFF, alpha: 1.0)
     
 //    required init(coder aDecoder: NSCoder) {
@@ -44,17 +44,21 @@ class RoundGradientLabel : UILabel {
 //    }
     
     override func drawRect(rect: CGRect) {
-        self.layer.backgroundColor = UIColor.clearColor().CGColor
         let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.backgroundColor = UIColor.blackColor().CGColor
         gradientLayer.frame = self.bounds
         gradientLayer.colors = [darkrGray.CGColor, lightGray.CGColor, darkrGray.CGColor]
-        let subview: UIView = UIView(frame: self.frame)
-        
-        subview.layer.cornerRadius = 4.0
-        subview.layer.borderColor = UIColor.blackColor().CGColor
-        subview.clipsToBounds = true
-        
-        self.insertSubview(subview, atIndex: 0)
+        gradientLayer.cornerRadius = 6.0
+        gradientLayer.masksToBounds = true
+        gradientLayer.borderColor = UIColor.blackColor().CGColor
+        self.layer.backgroundColor = UIColor.blackColor().CGColor
+        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.layer.insertSublayer(gradientLayer, atIndex: 0)
+        self.layer.cornerRadius = 6.0
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
+
+        //self.insertSubview(newView, atIndex: 0)
         
         super.drawRect(rect)
     }

@@ -18,152 +18,616 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rK4-8a-Abl">
-                                <rect key="frame" x="0.0" y="20" width="600" height="85"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="640"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-ut-0bA">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="17"/>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-ut-0bA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Kp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-Lu-NR8" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="17" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcs-ZB-S4N" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="40" bottom="8" right="40"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwA-tA-0R8" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dqn-Fq-xCV" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Kp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-im-jsx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="fD8-im-jsx" firstAttribute="centerY" secondItem="Dqn-Fq-xCV" secondAttribute="centerY" id="Lpd-Os-qpx"/>
+                                                    <constraint firstItem="fD8-im-jsx" firstAttribute="height" secondItem="Dqn-Fq-xCV" secondAttribute="height" id="ee1-EB-Vd8"/>
+                                                    <constraint firstItem="fD8-im-jsx" firstAttribute="width" secondItem="Dqn-Fq-xCV" secondAttribute="width" id="fiR-Zk-eet"/>
+                                                    <constraint firstItem="fD8-im-jsx" firstAttribute="centerX" secondItem="Dqn-Fq-xCV" secondAttribute="centerX" id="kdb-B4-BYF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obO-nF-K9o" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="218" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-kZ-vB3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="pYD-kZ-vB3" firstAttribute="width" secondItem="obO-nF-K9o" secondAttribute="width" id="G4j-QD-9aC"/>
+                                                    <constraint firstItem="pYD-kZ-vB3" firstAttribute="centerY" secondItem="obO-nF-K9o" secondAttribute="centerY" id="WRI-MM-rZj"/>
+                                                    <constraint firstItem="pYD-kZ-vB3" firstAttribute="height" secondItem="obO-nF-K9o" secondAttribute="height" id="bF4-s7-2wi"/>
+                                                    <constraint firstItem="pYD-kZ-vB3" firstAttribute="centerX" secondItem="obO-nF-K9o" secondAttribute="centerX" id="lhG-Ga-clh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tk9-85-P3s" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="409" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apB-Jw-T6K">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="apB-Jw-T6K" firstAttribute="centerX" secondItem="tk9-85-P3s" secondAttribute="centerX" id="3He-Iy-MgW"/>
+                                                    <constraint firstItem="apB-Jw-T6K" firstAttribute="height" secondItem="tk9-85-P3s" secondAttribute="height" id="47O-TI-4dU"/>
+                                                    <constraint firstItem="apB-Jw-T6K" firstAttribute="centerY" secondItem="tk9-85-P3s" secondAttribute="centerY" id="6jF-2O-TmZ"/>
+                                                    <constraint firstItem="apB-Jw-T6K" firstAttribute="width" secondItem="tk9-85-P3s" secondAttribute="width" id="iug-jo-gzt"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="obO-nF-K9o" firstAttribute="width" secondItem="tk9-85-P3s" secondAttribute="width" id="xxO-C3-SgM"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-ZK-739">
-                                        <rect key="frame" x="0.0" y="17" width="600" height="17"/>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TuJ-Gj-JER">
+                                        <rect key="frame" x="0.0" y="128" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 1 hour:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-Lk-CRd" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-gb-krR" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb0-V8-EUU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qo1-Lt-JfD" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 1 hour:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-tb-LrC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="7O7-tb-LrC" firstAttribute="centerX" secondItem="Qo1-Lt-JfD" secondAttribute="centerX" id="NYW-2O-ovq"/>
+                                                    <constraint firstItem="7O7-tb-LrC" firstAttribute="width" secondItem="Qo1-Lt-JfD" secondAttribute="width" id="UbJ-1Q-fGd"/>
+                                                    <constraint firstItem="7O7-tb-LrC" firstAttribute="height" secondItem="Qo1-Lt-JfD" secondAttribute="height" id="dNO-9N-hpL"/>
+                                                    <constraint firstItem="7O7-tb-LrC" firstAttribute="centerY" secondItem="Qo1-Lt-JfD" secondAttribute="centerY" id="zpy-3n-wqE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKO-wG-6rR" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="218" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x01-nn-lQ0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="x01-nn-lQ0" firstAttribute="centerX" secondItem="VKO-wG-6rR" secondAttribute="centerX" id="EuO-4R-cUM"/>
+                                                    <constraint firstItem="x01-nn-lQ0" firstAttribute="centerY" secondItem="VKO-wG-6rR" secondAttribute="centerY" id="Jx2-Vo-Aos"/>
+                                                    <constraint firstItem="x01-nn-lQ0" firstAttribute="width" secondItem="VKO-wG-6rR" secondAttribute="width" id="mho-zL-A0a"/>
+                                                    <constraint firstItem="x01-nn-lQ0" firstAttribute="height" secondItem="VKO-wG-6rR" secondAttribute="height" id="yCq-Fz-RAK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-M2-j3C" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="409" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbs-0O-cS8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Dbs-0O-cS8" firstAttribute="centerX" secondItem="Xa6-M2-j3C" secondAttribute="centerX" id="U3L-Cj-YpK"/>
+                                                    <constraint firstItem="Dbs-0O-cS8" firstAttribute="width" secondItem="Xa6-M2-j3C" secondAttribute="width" id="YIF-2l-Vn6"/>
+                                                    <constraint firstItem="Dbs-0O-cS8" firstAttribute="centerY" secondItem="Xa6-M2-j3C" secondAttribute="centerY" id="pfR-Er-Qsy"/>
+                                                    <constraint firstItem="Dbs-0O-cS8" firstAttribute="height" secondItem="Xa6-M2-j3C" secondAttribute="height" id="zy8-xA-hN5"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VKO-wG-6rR" firstAttribute="width" secondItem="Xa6-M2-j3C" secondAttribute="width" id="dBX-9y-njf"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHV-of-Wda">
-                                        <rect key="frame" x="0.0" y="34" width="600" height="17"/>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ln0-tk-LLp">
+                                        <rect key="frame" x="0.0" y="256" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 4 hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me8-V6-44e" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFT-MH-q9s" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-bJ-9iT" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOq-dQ-P1J" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp in 4 hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwf-vz-7PM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="mwf-vz-7PM" firstAttribute="height" secondItem="QOq-dQ-P1J" secondAttribute="height" id="Gk3-hV-dSu"/>
+                                                    <constraint firstItem="mwf-vz-7PM" firstAttribute="centerX" secondItem="QOq-dQ-P1J" secondAttribute="centerX" id="p7n-Cy-AxR"/>
+                                                    <constraint firstItem="mwf-vz-7PM" firstAttribute="centerY" secondItem="QOq-dQ-P1J" secondAttribute="centerY" id="rn6-0B-xJQ"/>
+                                                    <constraint firstItem="mwf-vz-7PM" firstAttribute="width" secondItem="QOq-dQ-P1J" secondAttribute="width" id="swR-NK-itG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjh-MQ-YZw" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="218" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDO-AJ-qs6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="VDO-AJ-qs6" firstAttribute="centerY" secondItem="vjh-MQ-YZw" secondAttribute="centerY" id="GtQ-y1-GDX"/>
+                                                    <constraint firstItem="VDO-AJ-qs6" firstAttribute="centerX" secondItem="vjh-MQ-YZw" secondAttribute="centerX" id="MN0-aD-txV"/>
+                                                    <constraint firstItem="VDO-AJ-qs6" firstAttribute="height" secondItem="vjh-MQ-YZw" secondAttribute="height" id="PYD-Nq-0mv"/>
+                                                    <constraint firstItem="VDO-AJ-qs6" firstAttribute="width" secondItem="vjh-MQ-YZw" secondAttribute="width" id="pWu-Xs-uQZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-fI-V23" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="409" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-xx-Qhg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="aCh-xx-Qhg" firstAttribute="centerX" secondItem="lzO-fI-V23" secondAttribute="centerX" id="E7B-y2-XCZ"/>
+                                                    <constraint firstItem="aCh-xx-Qhg" firstAttribute="height" secondItem="lzO-fI-V23" secondAttribute="height" id="hvM-HA-q28"/>
+                                                    <constraint firstItem="aCh-xx-Qhg" firstAttribute="width" secondItem="lzO-fI-V23" secondAttribute="width" id="i9W-f2-29E"/>
+                                                    <constraint firstItem="aCh-xx-Qhg" firstAttribute="centerY" secondItem="lzO-fI-V23" secondAttribute="centerY" id="kCb-Cx-jxn"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vjh-MQ-YZw" firstAttribute="width" secondItem="lzO-fI-V23" secondAttribute="width" id="WRw-TG-PKJ"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-yE-qfC">
-                                        <rect key="frame" x="0.0" y="51" width="600" height="17"/>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEV-wq-r0X">
+                                        <rect key="frame" x="0.0" y="384" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brandon, MB K-Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-oS-NyK" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfC-33-kKl" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="537" y="0.0" width="20" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(Quiet)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag0-VX-gH4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="557" y="0.0" width="43" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-Ud-MXD" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brandon, MB K-Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-m1-450">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="L8w-m1-450" firstAttribute="height" secondItem="ap6-Ud-MXD" secondAttribute="height" id="031-Ae-lKR"/>
+                                                    <constraint firstItem="L8w-m1-450" firstAttribute="centerX" secondItem="ap6-Ud-MXD" secondAttribute="centerX" id="CeD-jc-ssd"/>
+                                                    <constraint firstItem="L8w-m1-450" firstAttribute="centerY" secondItem="ap6-Ud-MXD" secondAttribute="centerY" id="Hjn-pa-F7H"/>
+                                                    <constraint firstItem="L8w-m1-450" firstAttribute="width" secondItem="ap6-Ud-MXD" secondAttribute="width" id="WkL-Wr-g4L"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3co-Zw-C7L" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="218" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9L-Ut-sS7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Z9L-Ut-sS7" firstAttribute="centerY" secondItem="3co-Zw-C7L" secondAttribute="centerY" id="CSm-T6-K6Z"/>
+                                                    <constraint firstItem="Z9L-Ut-sS7" firstAttribute="width" secondItem="3co-Zw-C7L" secondAttribute="width" id="P2B-PC-71d"/>
+                                                    <constraint firstItem="Z9L-Ut-sS7" firstAttribute="height" secondItem="3co-Zw-C7L" secondAttribute="height" id="SlR-AQ-Qpv"/>
+                                                    <constraint firstItem="Z9L-Ut-sS7" firstAttribute="centerX" secondItem="3co-Zw-C7L" secondAttribute="centerX" id="Zsz-d1-23c"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TTv-Ql-zxH" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="409" y="0.0" width="191" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7A-DQ-NTU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Z7A-DQ-NTU" firstAttribute="width" secondItem="TTv-Ql-zxH" secondAttribute="width" id="3eB-Bb-uOi"/>
+                                                    <constraint firstItem="Z7A-DQ-NTU" firstAttribute="height" secondItem="TTv-Ql-zxH" secondAttribute="height" id="8iI-hQ-LLr"/>
+                                                    <constraint firstItem="Z7A-DQ-NTU" firstAttribute="centerX" secondItem="TTv-Ql-zxH" secondAttribute="centerX" id="fSc-2s-Lai"/>
+                                                    <constraint firstItem="Z7A-DQ-NTU" firstAttribute="centerY" secondItem="TTv-Ql-zxH" secondAttribute="centerY" id="kIV-K8-BCl"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3co-Zw-C7L" firstAttribute="width" secondItem="TTv-Ql-zxH" secondAttribute="width" id="ril-H2-iBI"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akP-Km-Mbg">
-                                        <rect key="frame" x="0.0" y="68" width="600" height="17"/>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxc-fg-Hbp">
+                                        <rect key="frame" x="0.0" y="512" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kp needed for aurora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-T6-gC4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="580" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0T-KK-cdU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="580" y="0.0" width="20" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25Q-Lu-fYp" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="436" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Kp needed for aurora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOH-Gh-KAr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="fOH-Gh-KAr" firstAttribute="height" secondItem="25Q-Lu-fYp" secondAttribute="height" id="DjL-uf-SmJ"/>
+                                                    <constraint firstItem="fOH-Gh-KAr" firstAttribute="centerY" secondItem="25Q-Lu-fYp" secondAttribute="centerY" id="K4Q-Fa-lbX"/>
+                                                    <constraint firstItem="fOH-Gh-KAr" firstAttribute="centerX" secondItem="25Q-Lu-fYp" secondAttribute="centerX" id="Oo7-h9-Laf"/>
+                                                    <constraint firstItem="fOH-Gh-KAr" firstAttribute="width" secondItem="25Q-Lu-fYp" secondAttribute="width" id="nWE-Cq-NUS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KnO-sJ-vDt" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="436" y="0.0" width="164" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aob-hJ-tX4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="aob-hJ-tX4" firstAttribute="centerX" secondItem="KnO-sJ-vDt" secondAttribute="centerX" id="JqP-X5-ejR"/>
+                                                    <constraint firstItem="aob-hJ-tX4" firstAttribute="centerY" secondItem="KnO-sJ-vDt" secondAttribute="centerY" id="Te5-Wz-k38"/>
+                                                    <constraint firstItem="aob-hJ-tX4" firstAttribute="height" secondItem="KnO-sJ-vDt" secondAttribute="height" id="pZS-7v-VUr"/>
+                                                    <constraint firstItem="aob-hJ-tX4" firstAttribute="width" secondItem="KnO-sJ-vDt" secondAttribute="width" id="zV6-02-pY4"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="VFT-MH-q9s" secondAttribute="width" id="EJN-Dl-gM4"/>
-                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="mfC-33-kKl" secondAttribute="width" id="MHR-ZT-aJr"/>
-                                    <constraint firstItem="tcs-ZB-S4N" firstAttribute="width" secondItem="9eM-gb-krR" secondAttribute="width" id="RWC-ZH-c4u"/>
-                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="Ag0-VX-gH4" secondAttribute="width" id="YIV-1E-qk9"/>
-                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="Bb0-V8-EUU" secondAttribute="width" id="jGb-xg-Jf2"/>
-                                    <constraint firstItem="KwA-tA-0R8" firstAttribute="width" secondItem="EDc-bJ-9iT" secondAttribute="width" id="qcf-CG-yf2"/>
+                                    <constraint firstItem="Dqn-Fq-xCV" firstAttribute="width" secondItem="ap6-Ud-MXD" secondAttribute="width" id="3FV-SX-gAN"/>
+                                    <constraint firstItem="Dqn-Fq-xCV" firstAttribute="width" secondItem="Qo1-Lt-JfD" secondAttribute="width" id="Xjg-QI-rRu"/>
+                                    <constraint firstItem="Dqn-Fq-xCV" firstAttribute="width" secondItem="QOq-dQ-P1J" secondAttribute="width" id="yva-Nk-v3o"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last updated: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-OS-pv4" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="530" width="600" height="21"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kY7-Qp-xmb" userLabel="OptionalSwipeLeftView">
+                                <rect key="frame" x="0.0" y="75" width="600" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bsQ-x0-vtS">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="1117"/>
+                                        <subviews>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-Dz-53z">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-PZ-Qkz" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Solar Wind Speed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABu-Ik-qhX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ABu-Ik-qhX" firstAttribute="width" secondItem="I5A-PZ-Qkz" secondAttribute="width" id="5NE-2l-ytp"/>
+                                                            <constraint firstItem="ABu-Ik-qhX" firstAttribute="height" secondItem="I5A-PZ-Qkz" secondAttribute="height" id="8yY-cU-Ow6"/>
+                                                            <constraint firstItem="ABu-Ik-qhX" firstAttribute="centerY" secondItem="I5A-PZ-Qkz" secondAttribute="centerY" id="D3k-2c-RQB"/>
+                                                            <constraint firstItem="ABu-Ik-qhX" firstAttribute="centerX" secondItem="I5A-PZ-Qkz" secondAttribute="centerX" id="IYF-v6-pzh"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-rO-gpX" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk3-qR-pjh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Kk3-qR-pjh" firstAttribute="height" secondItem="sZ5-rO-gpX" secondAttribute="height" id="4Vh-U3-Fp8"/>
+                                                            <constraint firstItem="Kk3-qR-pjh" firstAttribute="width" secondItem="sZ5-rO-gpX" secondAttribute="width" id="BGL-nN-r9j"/>
+                                                            <constraint firstItem="Kk3-qR-pjh" firstAttribute="centerY" secondItem="sZ5-rO-gpX" secondAttribute="centerY" id="Cev-aM-lem"/>
+                                                            <constraint firstItem="Kk3-qR-pjh" firstAttribute="centerX" secondItem="sZ5-rO-gpX" secondAttribute="centerX" id="zyL-Fa-L35"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="sZ5-rO-gpX" firstAttribute="width" secondItem="I5A-PZ-Qkz" secondAttribute="width" id="LOD-n4-Ych"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-0c-Gam">
+                                                <rect key="frame" x="0.0" y="128" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-tZ-YiD" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Solar Wind Density:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa5-F7-W0a">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="pa5-F7-W0a" firstAttribute="width" secondItem="ccM-tZ-YiD" secondAttribute="width" id="j28-th-7tI"/>
+                                                            <constraint firstItem="pa5-F7-W0a" firstAttribute="centerX" secondItem="ccM-tZ-YiD" secondAttribute="centerX" id="pDO-NE-S2Z"/>
+                                                            <constraint firstItem="pa5-F7-W0a" firstAttribute="height" secondItem="ccM-tZ-YiD" secondAttribute="height" id="rlv-Jn-x0g"/>
+                                                            <constraint firstItem="pa5-F7-W0a" firstAttribute="centerY" secondItem="ccM-tZ-YiD" secondAttribute="centerY" id="wZc-oE-P6f"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwQ-LJ-eP8" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-tU-we4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="T3W-tU-we4" firstAttribute="width" secondItem="gwQ-LJ-eP8" secondAttribute="width" id="L2j-XV-BgU"/>
+                                                            <constraint firstItem="T3W-tU-we4" firstAttribute="centerY" secondItem="gwQ-LJ-eP8" secondAttribute="centerY" id="ZLv-Hr-sdp"/>
+                                                            <constraint firstItem="T3W-tU-we4" firstAttribute="centerX" secondItem="gwQ-LJ-eP8" secondAttribute="centerX" id="gyP-L6-cji"/>
+                                                            <constraint firstItem="T3W-tU-we4" firstAttribute="height" secondItem="gwQ-LJ-eP8" secondAttribute="height" id="r6a-Xh-ZGM"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="gwQ-LJ-eP8" firstAttribute="width" secondItem="ccM-tZ-YiD" secondAttribute="width" id="Xs5-i1-a8q"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-48-yBM">
+                                                <rect key="frame" x="0.0" y="256" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qH-vx-h8m" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="IMF Magnitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-8g-iNW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cRZ-8g-iNW" firstAttribute="centerY" secondItem="2qH-vx-h8m" secondAttribute="centerY" id="EII-h8-L1k"/>
+                                                            <constraint firstItem="cRZ-8g-iNW" firstAttribute="centerX" secondItem="2qH-vx-h8m" secondAttribute="centerX" id="O3W-aX-dwb"/>
+                                                            <constraint firstItem="cRZ-8g-iNW" firstAttribute="width" secondItem="2qH-vx-h8m" secondAttribute="width" id="ZC1-N4-cWl"/>
+                                                            <constraint firstItem="cRZ-8g-iNW" firstAttribute="height" secondItem="2qH-vx-h8m" secondAttribute="height" id="awn-Gc-Sfz"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fku-TQ-7m8" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25E-Lf-GUf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="25E-Lf-GUf" firstAttribute="centerY" secondItem="fku-TQ-7m8" secondAttribute="centerY" id="0Or-wp-KSw"/>
+                                                            <constraint firstItem="25E-Lf-GUf" firstAttribute="height" secondItem="fku-TQ-7m8" secondAttribute="height" id="PBa-pV-VaA"/>
+                                                            <constraint firstItem="25E-Lf-GUf" firstAttribute="width" secondItem="fku-TQ-7m8" secondAttribute="width" id="R2I-PR-5eg"/>
+                                                            <constraint firstItem="25E-Lf-GUf" firstAttribute="centerX" secondItem="fku-TQ-7m8" secondAttribute="centerX" id="dSp-Ca-xtz"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="fku-TQ-7m8" firstAttribute="width" secondItem="2qH-vx-h8m" secondAttribute="width" id="LEt-Lf-nWH"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZC0-uX-rNk">
+                                                <rect key="frame" x="0.0" y="384" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-Lt-WMI" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="IMF Z Component" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NE-ww-SFk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="7NE-ww-SFk" firstAttribute="width" secondItem="YGE-Lt-WMI" secondAttribute="width" id="DWh-kI-maN"/>
+                                                            <constraint firstItem="7NE-ww-SFk" firstAttribute="height" secondItem="YGE-Lt-WMI" secondAttribute="height" id="Ekv-mg-jB7"/>
+                                                            <constraint firstItem="7NE-ww-SFk" firstAttribute="centerX" secondItem="YGE-Lt-WMI" secondAttribute="centerX" id="RB1-bI-GZU"/>
+                                                            <constraint firstItem="7NE-ww-SFk" firstAttribute="centerY" secondItem="YGE-Lt-WMI" secondAttribute="centerY" id="b0E-fC-YoV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yx-Me-DRF" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRR-K4-cUI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="kRR-K4-cUI" firstAttribute="centerY" secondItem="5Yx-Me-DRF" secondAttribute="centerY" id="Qwx-Ja-vlg"/>
+                                                            <constraint firstItem="kRR-K4-cUI" firstAttribute="width" secondItem="5Yx-Me-DRF" secondAttribute="width" id="XBv-0q-jtj"/>
+                                                            <constraint firstItem="kRR-K4-cUI" firstAttribute="height" secondItem="5Yx-Me-DRF" secondAttribute="height" id="mT3-EC-0HX"/>
+                                                            <constraint firstItem="kRR-K4-cUI" firstAttribute="centerX" secondItem="5Yx-Me-DRF" secondAttribute="centerX" id="zvf-wM-crp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="5Yx-Me-DRF" firstAttribute="width" secondItem="YGE-Lt-WMI" secondAttribute="width" id="bHp-DA-yGd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kB3-9L-TBE">
+                                                <rect key="frame" x="0.0" y="512" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-FE-kQe" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Boyle Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wr-uT-kIi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="9Wr-uT-kIi" firstAttribute="centerX" secondItem="0yz-FE-kQe" secondAttribute="centerX" id="82p-jb-9Wd"/>
+                                                            <constraint firstItem="9Wr-uT-kIi" firstAttribute="centerY" secondItem="0yz-FE-kQe" secondAttribute="centerY" id="UzQ-fg-TsF"/>
+                                                            <constraint firstItem="9Wr-uT-kIi" firstAttribute="width" secondItem="0yz-FE-kQe" secondAttribute="width" id="iCJ-eR-Yjf"/>
+                                                            <constraint firstItem="9Wr-uT-kIi" firstAttribute="height" secondItem="0yz-FE-kQe" secondAttribute="height" id="wwl-8k-7P3"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-GT-oNJ" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZw-be-wt2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="eZw-be-wt2" firstAttribute="width" secondItem="ANg-GT-oNJ" secondAttribute="width" id="Gdk-w0-QlT"/>
+                                                            <constraint firstItem="eZw-be-wt2" firstAttribute="centerY" secondItem="ANg-GT-oNJ" secondAttribute="centerY" id="IRG-ZV-vnv"/>
+                                                            <constraint firstItem="eZw-be-wt2" firstAttribute="height" secondItem="ANg-GT-oNJ" secondAttribute="height" id="Iyg-IN-Qab"/>
+                                                            <constraint firstItem="eZw-be-wt2" firstAttribute="centerX" secondItem="ANg-GT-oNJ" secondAttribute="centerX" id="ep7-4S-5OZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ANg-GT-oNJ" firstAttribute="width" secondItem="0yz-FE-kQe" secondAttribute="width" id="uj9-Fa-3rS"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-tz-RdF">
+                                                <rect key="frame" x="0.0" y="640" width="600" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggi-GG-Mhz" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DST Index:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-0M-xRB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="SFf-0M-xRB" firstAttribute="centerY" secondItem="Ggi-GG-Mhz" secondAttribute="centerY" id="AYk-qT-hs8"/>
+                                                            <constraint firstItem="SFf-0M-xRB" firstAttribute="height" secondItem="Ggi-GG-Mhz" secondAttribute="height" id="bAn-r7-VZr"/>
+                                                            <constraint firstItem="SFf-0M-xRB" firstAttribute="width" secondItem="Ggi-GG-Mhz" secondAttribute="width" id="dej-5D-tFW"/>
+                                                            <constraint firstItem="SFf-0M-xRB" firstAttribute="centerX" secondItem="Ggi-GG-Mhz" secondAttribute="centerX" id="u5T-Sf-IZJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H91-L5-X1w" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                        <rect key="frame" x="300" y="0.0" width="300" height="128"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpJ-If-nqK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="PpJ-If-nqK" firstAttribute="height" secondItem="H91-L5-X1w" secondAttribute="height" id="D9e-qQ-bkm"/>
+                                                            <constraint firstItem="PpJ-If-nqK" firstAttribute="centerX" secondItem="H91-L5-X1w" secondAttribute="centerX" id="nqu-8A-4PD"/>
+                                                            <constraint firstItem="PpJ-If-nqK" firstAttribute="width" secondItem="H91-L5-X1w" secondAttribute="width" id="oR2-iK-fNN"/>
+                                                            <constraint firstItem="PpJ-If-nqK" firstAttribute="centerY" secondItem="H91-L5-X1w" secondAttribute="centerY" id="sRg-EY-Lsx"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="H91-L5-X1w" firstAttribute="width" secondItem="Ggi-GG-Mhz" secondAttribute="width" id="6du-dk-rKa"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="filler.png" translatesAutoresizingMaskIntoConstraints="NO" id="JwA-19-Ng7">
+                                                <rect key="frame" x="0.0" y="768" width="600" height="349"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bsQ-x0-vtS" firstAttribute="height" secondItem="kY7-Qp-xmb" secondAttribute="height" id="OzG-Cb-HZC"/>
+                                    <constraint firstItem="bsQ-x0-vtS" firstAttribute="width" secondItem="kY7-Qp-xmb" secondAttribute="width" id="wMI-zA-ZDY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6Z-tL-quv" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="531" width="600" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Last updated: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-OS-pv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="VEy-OS-pv4" firstAttribute="centerX" secondItem="g6Z-tL-quv" secondAttribute="centerX" id="C0F-rY-chk"/>
+                                    <constraint firstItem="VEy-OS-pv4" firstAttribute="width" secondItem="g6Z-tL-quv" secondAttribute="width" id="Rp9-1N-gnr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="VEy-OS-pv4" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Csa-8d-ZLJ"/>
                             <constraint firstItem="rK4-8a-Abl" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="D0r-yX-ryO"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="VEy-OS-pv4" secondAttribute="bottom" id="RIR-2M-Qup"/>
-                            <constraint firstItem="VEy-OS-pv4" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="hS3-xu-tqg"/>
+                            <constraint firstItem="kY7-Qp-xmb" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="I6s-oY-mO0"/>
+                            <constraint firstItem="kY7-Qp-xmb" firstAttribute="trailing" secondItem="rK4-8a-Abl" secondAttribute="trailing" id="eeI-1T-TGz"/>
+                            <constraint firstItem="g6Z-tL-quv" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ifb-Pt-CeS"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="g6Z-tL-quv" secondAttribute="bottom" id="lVD-L2-Q8m"/>
+                            <constraint firstItem="g6Z-tL-quv" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="pCu-Op-Bc0"/>
+                            <constraint firstItem="kY7-Qp-xmb" firstAttribute="leading" secondItem="g6Z-tL-quv" secondAttribute="leading" id="rmL-zJ-9C7"/>
                             <constraint firstItem="rK4-8a-Abl" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="tuk-fu-g34"/>
+                            <constraint firstItem="kY7-Qp-xmb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="zdP-bs-hIz"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="GCa-na-WlD" appends="YES" id="h1K-gB-wyR"/>
@@ -172,6 +636,24 @@
                     <tabBarItem key="tabBarItem" title="Conditions" image="ic_tab_conditions_grey.png" id="acW-dT-cKf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="DSTIndex" destination="PpJ-If-nqK" id="Pse-gK-SeL"/>
+                        <outlet property="IMFMagnitude" destination="25E-Lf-GUf" id="Sv6-nM-oNc"/>
+                        <outlet property="IMFZComponent" destination="kRR-K4-cUI" id="4U8-3A-XJw"/>
+                        <outlet property="boyleIndex" destination="eZw-be-wt2" id="Q09-Uf-BJD"/>
+                        <outlet property="brandonMBKIndex" destination="Z9L-Ut-sS7" id="IpN-G9-wj0"/>
+                        <outlet property="brandonMBKIndexCond" destination="Z7A-DQ-NTU" id="dEr-yV-2Bq"/>
+                        <outlet property="currentKp" destination="pYD-kZ-vB3" id="1Dj-hH-JOT"/>
+                        <outlet property="currentKpCond" destination="apB-Jw-T6K" id="CgM-gd-eRA"/>
+                        <outlet property="kpIn1Hour" destination="x01-nn-lQ0" id="U1u-GT-RnR"/>
+                        <outlet property="kpIn1HourCond" destination="Dbs-0O-cS8" id="zOR-1r-9vW"/>
+                        <outlet property="kpIn4Hours" destination="VDO-AJ-qs6" id="AIn-AO-sGn"/>
+                        <outlet property="kpIn4HoursCond" destination="aCh-xx-Qhg" id="9rY-sV-W1R"/>
+                        <outlet property="kpNeededForAurora" destination="aob-hJ-tX4" id="96I-93-YSw"/>
+                        <outlet property="lastUpdatedLabel" destination="VEy-OS-pv4" id="bhn-K6-r3d"/>
+                        <outlet property="solarWindDensity" destination="T3W-tU-we4" id="AAP-JT-9gf"/>
+                        <outlet property="solarWindSpeed" destination="Kk3-qR-pjh" id="2SI-fg-Itc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="GCa-na-WlD"/>
@@ -191,206 +673,450 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6lD-3N-fjo">
-                                <rect key="frame" x="0.0" y="20" width="600" height="85"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="640"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sya-IB-ne7">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sya-IB-ne7">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Storm Probability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmr-4c-nRQ" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-Ek-G8S" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-25-S1w" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-px-gmk" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CA2-L0-93B" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Storm Probability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmr-4c-nRQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="299" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="CA2-L0-93B" secondAttribute="width" id="73i-B5-HBa"/>
+                                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="height" secondItem="CA2-L0-93B" secondAttribute="height" id="rSR-Km-HXG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKj-da-YyN" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-Ek-G8S">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="height" secondItem="TKj-da-YyN" secondAttribute="height" id="NrH-Yv-RNg"/>
+                                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="TKj-da-YyN" secondAttribute="width" id="Oc7-wN-Mat"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tf8-cz-ZDV" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="374" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-25-S1w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="AAI-25-S1w" firstAttribute="height" secondItem="tf8-cz-ZDV" secondAttribute="height" id="KZS-g3-iXJ"/>
+                                                    <constraint firstItem="AAI-25-S1w" firstAttribute="width" secondItem="tf8-cz-ZDV" secondAttribute="width" id="kBo-qM-OnN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-Fu-pNU" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="487" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRb-40-8zT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="width" secondItem="Hkf-Fu-pNU" secondAttribute="width" id="WbV-hV-Tna"/>
+                                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="height" secondItem="Hkf-Fu-pNU" secondAttribute="height" id="orV-O2-Cf5"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="gEg-px-gmk" secondAttribute="width" id="S35-6i-gvo"/>
-                                            <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="AAI-25-S1w" secondAttribute="width" id="cbg-gd-RHU"/>
+                                            <constraint firstItem="TKj-da-YyN" firstAttribute="width" secondItem="Hkf-Fu-pNU" secondAttribute="width" id="4da-sl-1wP"/>
+                                            <constraint firstItem="TKj-da-YyN" firstAttribute="width" secondItem="tf8-cz-ZDV" secondAttribute="width" id="Jpe-RB-tqF"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-A1-HUG">
-                                        <rect key="frame" x="0.0" y="17" width="600" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrP-kI-zel">
+                                        <rect key="frame" x="0.0" y="128" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T76-c2-vEC" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVe-Bn-i9L" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPi-zV-KSX" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3S-db-7EU" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-wS-cdK" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZX-mc-fjU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="299" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="bZX-mc-fjU" firstAttribute="height" secondItem="fh2-wS-cdK" secondAttribute="height" id="AKA-0y-SOd"/>
+                                                    <constraint firstItem="bZX-mc-fjU" firstAttribute="width" secondItem="fh2-wS-cdK" secondAttribute="width" id="zKh-kx-Rfu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4N7-4w-YDF" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cij-RC-MAf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="cij-RC-MAf" firstAttribute="height" secondItem="4N7-4w-YDF" secondAttribute="height" id="6UJ-wS-6pV"/>
+                                                    <constraint firstItem="cij-RC-MAf" firstAttribute="width" secondItem="4N7-4w-YDF" secondAttribute="width" id="Hc4-BY-xx1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5R-vR-efe" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="374" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-pw-bMa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="aLk-pw-bMa" firstAttribute="height" secondItem="f5R-vR-efe" secondAttribute="height" id="gGa-Wj-HcN"/>
+                                                    <constraint firstItem="aLk-pw-bMa" firstAttribute="width" secondItem="f5R-vR-efe" secondAttribute="width" id="gu7-dE-zR9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDd-MT-hDN" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="487" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avj-1i-SwP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Avj-1i-SwP" firstAttribute="height" secondItem="LDd-MT-hDN" secondAttribute="height" id="ANx-VK-zsa"/>
+                                                    <constraint firstItem="Avj-1i-SwP" firstAttribute="width" secondItem="LDd-MT-hDN" secondAttribute="width" id="COb-8J-GSo"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="XVe-Bn-i9L" firstAttribute="width" secondItem="q3S-db-7EU" secondAttribute="width" id="BUv-00-Ry6"/>
-                                            <constraint firstItem="XVe-Bn-i9L" firstAttribute="width" secondItem="SPi-zV-KSX" secondAttribute="width" id="t8H-qr-elc"/>
+                                            <constraint firstItem="4N7-4w-YDF" firstAttribute="width" secondItem="LDd-MT-hDN" secondAttribute="width" id="QNF-hn-0Ap"/>
+                                            <constraint firstItem="4N7-4w-YDF" firstAttribute="width" secondItem="f5R-vR-efe" secondAttribute="width" id="aUC-5d-ci9"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-6l-u9y">
-                                        <rect key="frame" x="0.0" y="34" width="600" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-Y6-Nsa">
+                                        <rect key="frame" x="0.0" y="256" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Minor Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWT-5A-AJ9" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39y-HS-qNK" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-jI-XPh" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-9o-90P" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iql-I0-3i8" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Minor Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7x-Mb-KEp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="299" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="U7x-Mb-KEp" firstAttribute="width" secondItem="Iql-I0-3i8" secondAttribute="width" id="bYI-EI-mgf"/>
+                                                    <constraint firstItem="U7x-Mb-KEp" firstAttribute="height" secondItem="Iql-I0-3i8" secondAttribute="height" id="cFG-uv-l5z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="al1-G5-J9L" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-gw-Jmf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="cza-gw-Jmf" firstAttribute="width" secondItem="al1-G5-J9L" secondAttribute="width" id="9Vu-8b-B62"/>
+                                                    <constraint firstItem="cza-gw-Jmf" firstAttribute="height" secondItem="al1-G5-J9L" secondAttribute="height" id="UmN-5x-y6P"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-Cj-Qyx" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="374" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXU-tW-iG6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="PXU-tW-iG6" firstAttribute="width" secondItem="SL5-Cj-Qyx" secondAttribute="width" id="dfE-Qw-tWc"/>
+                                                    <constraint firstItem="PXU-tW-iG6" firstAttribute="height" secondItem="SL5-Cj-Qyx" secondAttribute="height" id="mCY-yB-c2T"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9R-d3-KRu" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="487" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laF-el-MLx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="laF-el-MLx" firstAttribute="height" secondItem="B9R-d3-KRu" secondAttribute="height" id="g5T-4H-t5M"/>
+                                                    <constraint firstItem="laF-el-MLx" firstAttribute="width" secondItem="B9R-d3-KRu" secondAttribute="width" id="iyR-BH-104"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="39y-HS-qNK" firstAttribute="width" secondItem="9c2-jI-XPh" secondAttribute="width" id="TGa-BN-QFn"/>
-                                            <constraint firstItem="39y-HS-qNK" firstAttribute="width" secondItem="iPl-9o-90P" secondAttribute="width" id="W7L-wH-eVb"/>
+                                            <constraint firstItem="al1-G5-J9L" firstAttribute="width" secondItem="B9R-d3-KRu" secondAttribute="width" id="a3O-97-Ul6"/>
+                                            <constraint firstItem="al1-G5-J9L" firstAttribute="width" secondItem="SL5-Cj-Qyx" secondAttribute="width" id="quJ-e0-k7s"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-BW-teY">
-                                        <rect key="frame" x="0.0" y="51" width="600" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UqR-u1-joC">
+                                        <rect key="frame" x="0.0" y="384" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Moderate Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-sm-Go5" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ae-U2-VeP" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-na-Vgy" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAd-ne-ISc" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Exk-kH-IFq" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Moderate Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2r-T6-S5k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="299" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="R2r-T6-S5k" firstAttribute="height" secondItem="Exk-kH-IFq" secondAttribute="height" id="QF4-6i-hDg"/>
+                                                    <constraint firstItem="R2r-T6-S5k" firstAttribute="width" secondItem="Exk-kH-IFq" secondAttribute="width" id="xRv-bz-J5B"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4U0-Hp-UXV" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsn-MU-N0E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="xsn-MU-N0E" firstAttribute="height" secondItem="4U0-Hp-UXV" secondAttribute="height" id="Hcs-v4-Fa1"/>
+                                                    <constraint firstItem="xsn-MU-N0E" firstAttribute="width" secondItem="4U0-Hp-UXV" secondAttribute="width" id="TAI-cJ-CL8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbT-42-LXM" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="374" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmS-I3-rp7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="RmS-I3-rp7" firstAttribute="width" secondItem="hbT-42-LXM" secondAttribute="width" id="LIq-bg-yAH"/>
+                                                    <constraint firstItem="RmS-I3-rp7" firstAttribute="height" secondItem="hbT-42-LXM" secondAttribute="height" id="xPU-eK-yO0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-ce-fu5" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="487" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-o7-W4b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="CWY-o7-W4b" firstAttribute="width" secondItem="e3d-ce-fu5" secondAttribute="width" id="fOG-mu-T2b"/>
+                                                    <constraint firstItem="CWY-o7-W4b" firstAttribute="height" secondItem="e3d-ce-fu5" secondAttribute="height" id="tBK-K0-9k8"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="4Ae-U2-VeP" firstAttribute="width" secondItem="bJU-na-Vgy" secondAttribute="width" id="nbN-fk-UTH"/>
-                                            <constraint firstItem="4Ae-U2-VeP" firstAttribute="width" secondItem="NAd-ne-ISc" secondAttribute="width" id="xXx-9i-Yrb"/>
+                                            <constraint firstItem="4U0-Hp-UXV" firstAttribute="width" secondItem="hbT-42-LXM" secondAttribute="width" id="0sg-5V-Cw7"/>
+                                            <constraint firstItem="4U0-Hp-UXV" firstAttribute="width" secondItem="e3d-ce-fu5" secondAttribute="width" id="7W8-UV-lu4"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-oc-UAL">
-                                        <rect key="frame" x="0.0" y="68" width="600" height="17"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqX-5m-dmi">
+                                        <rect key="frame" x="0.0" y="512" width="600" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Strong-Extreme Storm            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-r0-TyM" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48C-lX-fJR" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06z-sx-tWT" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="324" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ee-bK-at3" customClass="RoundGradientLabel" customModule="auroralert2" customModuleProvider="target">
-                                                <rect key="frame" x="462" y="0.0" width="138" height="17"/>
-                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                                <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gw-RU-3Ur" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Strong-Extreme Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIw-yt-68R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="299" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="nIw-yt-68R" firstAttribute="width" secondItem="0gw-RU-3Ur" secondAttribute="width" id="VQ5-Fr-p3L"/>
+                                                    <constraint firstItem="nIw-yt-68R" firstAttribute="height" secondItem="0gw-RU-3Ur" secondAttribute="height" id="mgl-Qb-8WT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-EY-Ja1" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-Qu-hj2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="gM9-Qu-hj2" firstAttribute="height" secondItem="ng8-EY-Ja1" secondAttribute="height" id="H8g-5w-7aJ"/>
+                                                    <constraint firstItem="gM9-Qu-hj2" firstAttribute="width" secondItem="ng8-EY-Ja1" secondAttribute="width" id="R6n-8M-qok"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w96-wF-Ooe" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="374" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0q-Ub-r8X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="x0q-Ub-r8X" firstAttribute="width" secondItem="w96-wF-Ooe" secondAttribute="width" id="7QI-04-tVr"/>
+                                                    <constraint firstItem="x0q-Ub-r8X" firstAttribute="height" secondItem="w96-wF-Ooe" secondAttribute="height" id="W4O-6W-Ndl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-yr-soj" customClass="RoundGradientView" customModule="auroralert2" customModuleProvider="target">
+                                                <rect key="frame" x="487" y="0.0" width="113" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8n-x4-IAt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20"/>
+                                                        <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Q8n-x4-IAt" firstAttribute="width" secondItem="OQM-yr-soj" secondAttribute="width" id="DwX-CJ-ggZ"/>
+                                                    <constraint firstItem="Q8n-x4-IAt" firstAttribute="height" secondItem="OQM-yr-soj" secondAttribute="height" id="Gnh-C6-aXa"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="48C-lX-fJR" firstAttribute="width" secondItem="06z-sx-tWT" secondAttribute="width" id="r4a-hv-hce"/>
-                                            <constraint firstItem="48C-lX-fJR" firstAttribute="width" secondItem="2Ee-bK-at3" secondAttribute="width" id="txS-51-bE8"/>
+                                            <constraint firstItem="ng8-EY-Ja1" firstAttribute="width" secondItem="w96-wF-Ooe" secondAttribute="width" id="nYy-lc-dbC"/>
+                                            <constraint firstItem="ng8-EY-Ja1" firstAttribute="width" secondItem="OQM-yr-soj" secondAttribute="width" id="x1D-jC-KZi"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="oWT-5A-AJ9" secondAttribute="width" id="0FO-zg-LwM"/>
-                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="T76-c2-vEC" secondAttribute="width" id="1XW-iz-LSI"/>
-                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="rDZ-sm-Go5" secondAttribute="width" id="bJE-LV-8Ea"/>
-                                    <constraint firstItem="dmr-4c-nRQ" firstAttribute="width" secondItem="Ioi-r0-TyM" secondAttribute="width" id="d7c-sZ-nMS"/>
+                                    <constraint firstItem="AAI-25-S1w" firstAttribute="width" secondItem="aLk-pw-bMa" secondAttribute="width" id="0fF-ep-ggV"/>
+                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="cza-gw-Jmf" secondAttribute="width" id="3Yg-jR-E1s"/>
+                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="width" secondItem="Q8n-x4-IAt" secondAttribute="width" id="6t2-Kr-TNG"/>
+                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="gM9-Qu-hj2" secondAttribute="width" id="7Ex-SZ-tw6"/>
+                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="width" secondItem="laF-el-MLx" secondAttribute="width" id="88O-e8-Bsu"/>
+                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="cij-RC-MAf" secondAttribute="width" id="NKc-Ml-jJu"/>
+                                    <constraint firstItem="KhD-Ek-G8S" firstAttribute="width" secondItem="xsn-MU-N0E" secondAttribute="width" id="O0M-Gm-Lm6"/>
+                                    <constraint firstItem="AAI-25-S1w" firstAttribute="width" secondItem="PXU-tW-iG6" secondAttribute="width" id="P7e-u3-CTS"/>
+                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="width" secondItem="Avj-1i-SwP" secondAttribute="width" id="ZpU-pl-5dc"/>
+                                    <constraint firstItem="AAI-25-S1w" firstAttribute="width" secondItem="x0q-Ub-r8X" secondAttribute="width" id="caV-J1-9DK"/>
+                                    <constraint firstItem="AAI-25-S1w" firstAttribute="width" secondItem="RmS-I3-rp7" secondAttribute="width" id="fAV-0k-2rM"/>
+                                    <constraint firstItem="ZRb-40-8zT" firstAttribute="width" secondItem="CWY-o7-W4b" secondAttribute="width" id="vQd-yr-ag1"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbh-Bv-cz8">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="[Graphs coming soon!]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-0P-C87">
+                                        <rect key="frame" x="38" y="54" width="182" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.62352941179999999" green="0.96470588239999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Iw3-0P-C87" firstAttribute="centerY" secondItem="bbh-Bv-cz8" secondAttribute="centerY" id="QJ9-ov-oD7"/>
+                                    <constraint firstItem="Iw3-0P-C87" firstAttribute="centerX" secondItem="bbh-Bv-cz8" secondAttribute="centerX" id="gWc-Dx-l2n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6lD-3N-fjo" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="DoA-4y-RY1"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="bbh-Bv-cz8" secondAttribute="bottom" id="T3A-gx-z1N"/>
+                            <constraint firstItem="bbh-Bv-cz8" firstAttribute="trailing" secondItem="6lD-3N-fjo" secondAttribute="trailing" id="la9-dj-byU"/>
                             <constraint firstItem="6lD-3N-fjo" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="lre-kE-sqf"/>
+                            <constraint firstItem="bbh-Bv-cz8" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="y7O-eM-wqI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Forecast" image="ic_tab_forecast_grey.png" id="cPa-gy-q4n"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="active1day" destination="cij-RC-MAf" id="lYq-5H-RfU"/>
+                        <outlet property="active2day" destination="aLk-pw-bMa" id="fPD-YB-uuQ"/>
+                        <outlet property="active3day" destination="Avj-1i-SwP" id="OpT-QW-xFx"/>
+                        <outlet property="date1day" destination="KhD-Ek-G8S" id="Tm7-p5-AVZ"/>
+                        <outlet property="date2day" destination="AAI-25-S1w" id="Y6J-ad-U1X"/>
+                        <outlet property="date3day" destination="ZRb-40-8zT" id="Yfb-op-zoa"/>
+                        <outlet property="minorStorm1day" destination="cza-gw-Jmf" id="U0k-Zb-Lv4"/>
+                        <outlet property="minorStorm2day" destination="PXU-tW-iG6" id="7Xz-nH-97k"/>
+                        <outlet property="minorStorm3day" destination="laF-el-MLx" id="bcY-Dj-ho9"/>
+                        <outlet property="moderateStorm1day" destination="xsn-MU-N0E" id="KHK-OR-8fB"/>
+                        <outlet property="moderateStorm2day" destination="RmS-I3-rp7" id="yKo-kM-msK"/>
+                        <outlet property="moderateStorm3day" destination="CWY-o7-W4b" id="j64-EL-BK8"/>
+                        <outlet property="strongExtremeStorm1day" destination="gM9-Qu-hj2" id="7F4-rF-T5M"/>
+                        <outlet property="strongExtremeStorm2day" destination="x0q-Ub-r8X" id="jpX-Id-c7p"/>
+                        <outlet property="strongExtremeStorm3day" destination="Q8n-x4-IAt" id="mHD-Yq-WMn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -432,7 +1158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Nv-xq-lZT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="415"/>
+                                <rect key="frame" x="0.0" y="15" width="600" height="417"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rvd-zp-Ykg" userLabel="RefreshLoc">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -616,7 +1342,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZp-e0-I5x" userLabel="Display">
-                                        <rect key="frame" x="0.0" y="315" width="600" height="50"/>
+                                        <rect key="frame" x="0.0" y="315" width="600" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OD-PF-171">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
@@ -645,7 +1371,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF9-hb-bTJ" userLabel="OtherSettings">
-                                        <rect key="frame" x="0.0" y="365" width="600" height="50"/>
+                                        <rect key="frame" x="0.0" y="367" width="600" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJY-kp-ddW">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="27"/>
@@ -678,7 +1404,6 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Nv-xq-lZT" firstAttribute="centerY" secondItem="B4b-cS-IZ6" secondAttribute="centerY" id="f2P-zL-550"/>
                             <constraint firstItem="3Nv-xq-lZT" firstAttribute="width" secondItem="B4b-cS-IZ6" secondAttribute="width" id="hpl-qD-oAA"/>
                             <constraint firstItem="3Nv-xq-lZT" firstAttribute="centerX" secondItem="B4b-cS-IZ6" secondAttribute="centerX" id="wJz-An-MXv"/>
                         </constraints>
@@ -741,6 +1466,7 @@
     </scenes>
     <resources>
         <image name="activity_button.png" width="33" height="37"/>
+        <image name="filler.png" width="684" height="349"/>
         <image name="ic_refresh.png" width="48" height="48"/>
         <image name="ic_tab_conditions_grey.png" width="32" height="32"/>
         <image name="ic_tab_forecast_grey.png" width="32" height="32"/>
